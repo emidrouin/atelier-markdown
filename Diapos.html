@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Atelier présenté pour les Chercheuses badass" />
+  <title>Markdown: quoi? pourquoi? comment?</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Markdown: quoi? pourquoi? comment?</h1>
+  <p class="author">
+Atelier présenté pour les <em>Chercheuses badass</em>
+  </p>
+  <p class="date">21 octobre 2020</p>
+</div>
+<div id="plan-de-latelier" class="slide section level1">
+<h1>Plan de l’atelier</h1>
+<ol style="list-style-type: decimal">
+<li><strong>Quoi?</strong>: L’idée derrière Markdown</li>
+<li><strong>Comment?</strong>: La <em>syntaxe</em> Markdown</li>
+<li><strong>Pourquoi?</strong>: Mon utilisation de MD</li>
+</ol>
+</div>
+<div id="quest-ce-que-markdown" class="slide section level1">
+<h1>Qu’est-ce que Markdown</h1>
+<ul>
+<li>langage de <strong>balisage</strong> (<em>markup language</em>)
+<ul>
+<li>langage de balisage <strong>léger</strong> (<em>lightweight</em>)</li>
+</ul></li>
+<li>créé en 2004 (John Gruber et Aaron Swartz)</li>
+<li>caractéristiques:
+<ul>
+<li>facilité</li>
+<li>lisibilité</li>
+<li>(ex)portabilité</li>
+</ul></li>
+</ul>
+</div>
+<div id="quest-ce-que-cest" class="slide section level1">
+<h1>Qu’est-ce que c’est?</h1>
+<h2 id="ce-que-je-veux">Ce que je veux:</h2>
+<ul>
+<li>métadonnées du titre (Hola), sur l’autrice (Emilie Drouin) de la page et la date (Octobre 2020)</li>
+<li>Une ligne de texte avec de l’<em>italique</em> et du <strong>gras</strong></li>
+</ul>
+<h2 id="ce-que-jécris-en-markdown">Ce que j’écris en markdown:</h2>
+<pre><code>% Hola
+% Emilie Drouin
+% Octobre 2020
+*Hola!* Mon nom est **Emilie**.</code></pre>
+<p>ou même, si l’on n’a pas besoin des métadonnées (titre, autrice, date):</p>
+<pre><code>*Hola!* Mon nom est **Emilie**.</code></pre>
+<h2 id="ce-que-jobtiens">Ce que j’obtiens:</h2>
+<p><em>Hola!</em> Mon nom est <strong>Emilie</strong>.</p>
+</div>
+<div id="quest-ce-que-ce-nest-pas" class="slide section level1">
+<h1>Qu’est-ce que ce n’est pas…</h1>
+<p>Ce n’est ni du HTML, ni LaTeX, qui sont d’autres langages de balisage.</p>
+<h2 id="ce-nest-pas-du-html">Ce n’est pas du HTML</h2>
+<p>Pour obtenir “<em>Hola!</em> Mon nom est <strong>Emilie</strong>.”:</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hola&lt;/title&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Emilie Drouin&quot;&gt;
+        &lt;meta name=&quot;date&quot; content=&quot;Octobre 2020&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;&lt;i&gt;Hola!&lt;/i&gt; Mon nom est &lt;b&gt;Emilie&lt;/b&gt;.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>HTML est conçu pour le web.</p>
+</div>
+<div class="slide section level1">
+
+<h2 id="ce-nest-pas-latex">Ce n’est pas LaTeX</h2>
+<p>Pour obtenir “<em>Hola!</em> Mon nom est <strong>Emilie</strong>.”:</p>
+<pre><code>\documentclass{article}
+\title{Hola}
+\author{Emilie Drouin}
+\date{Octobre 2020}
+\begin{document}
+   \maketitle
+   \textit{Hola!} Mon nom est \textbf{Emilie}.
+\end{document}</code></pre>
+<p>LaTeX est beaucoup utilisé pour la rédaction (articles, livres, thèses) orientée vers une publication par impression (papier ou écran, par exemple PDF).</p>
+</div>
+<div id="pis-word-ça-va-tellement-bien-word" class="slide section level1">
+<h1>Pis Word?????????? Ça va tellement bien Word!!</h1>
+<p>Liberté et indépendance</p>
+</div>
+<div class="slide section level1">
+
+<h2 id="liberté">Liberté</h2>
+<ul>
+<li>la question du “libre”
+<ul>
+<li>le <em>par</em> et <em>pour</em> la communauté</li>
+<li>accès libre (<em>open access</em>) en publication savante… et ensuite?</li>
+<li>informatique libre
+<ul>
+<li>logiciels libres, gratuits, propriétaires???
+<ul>
+<li>propriétaire = Endnote (Clarivate Analytics), Mendeley (acheté par Elsevier); Word (Microsoft), Pages (Apple), Google Doc (Google); Internet Explorer (Microsoft), Safari (Apple), Chrome (Google); Windows (Microsoft); macOS et iOS (Apple*); Android (Google*)</li>
+<li>libre = Zotero; LibreOffice; Firefox (Mozilla Foundation); Noyau Linux</li>
+</ul></li>
+<li>LibreOffice comme alternative (libre) à Word</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="indépendance">Indépendance</h2>
+<ul>
+<li>la question des outils et des formats
+<ul>
+<li>les formats
+<ul>
+<li>.docx</li>
+<li>.odt</li>
+<li>.txt</li>
+<li>.md</li>
+<li>…</li>
+</ul></li>
+<li>les outils
+<ul>
+<li>la dépendance aux outils</li>
+<li>l’interopérabilité (compatibilité/portabilité)</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="dans-les-entrailles-dun-.docx">Dans les entrailles d’un .docx</h2>
+<div class="figure">
+<img src="Images/docx.png" alt="Comparaison entre l’interface de LibreOffice et le xml extrait du même un .docx." />
+<p class="caption">Comparaison entre l’interface de LibreOffice et le xml extrait du même un .docx.</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h2 id="dans-les-entrailles-dune-recette.md">Dans les entrailles d’une recette.md</h2>
+<div class="figure">
+<img src="Images/croustade.png" alt="Comparaison entre la syntaxe Markdown et le document produit" />
+<p class="caption">Comparaison entre la syntaxe Markdown et le document produit</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h2 id="retour-sur-les-caractéristiques-de-markdown">Retour sur les caractéristiques de Markdown</h2>
+<ol style="list-style-type: decimal">
+<li>facilité
+<ul>
+<li>facile à écrire, facile à lire</li>
+</ul></li>
+<li>simplicité
+<ul>
+<li>juste le nécessaire: repérage (titres), organisation (listes)</li>
+</ul></li>
+<li>(ex)portabilité
+<ul>
+<li>lisible en l’état (en plein texte - <em>plain text</em>); ne requiert pas d’outil (logiciel) spécifique</li>
+</ul></li>
+</ol>
+</div>
+<div class="slide section level1">
+
+<h2 id="hein-pas-doutil-spécifique">Hein?? pas d’outil spécifique?</h2>
+<p>Markdown est une <strong>syntaxe</strong> qui ne dépend pas d’un logiciel, ni pour l’écriture, ni pour la lecture (car il est <strong>lisible en l’état</strong>, c’est-à-dire que la <strong>syntaxe</strong> est si <strong>légère</strong> qu’elle n’interfère pas lors de la lecture humaine).</p>
+<h3 id="on-écritlit-ça-où-du-markdown">On écrit/lit ça où, du Markdown?</h3>
+<ul>
+<li>éditeurs plein-texte (format: .txt) ou des éditeurs de texte génériques
+<ul>
+<li>de base dans chaque système d’exploitation (<em>OS</em>): Bloc-notes / <em>Notepad</em> (Microsoft), TextEdit (Apple), gedit (de base dans Linux mais multi plate-forme)</li>
+<li>plus complets et plus complexes: Atom (libre, multi plate-forme), NotePad++ (libre, pour Windows), Sublime Texte (propriétaire, multi plate-forme)</li>
+<li>ultra léger: Geany (libre, multi plate-forme)</li>
+</ul></li>
+<li>éditeurs Markdown (format: .md)
+<ul>
+<li><em>parser</em> (analyseurs syntaxiques)</li>
+<li>outils plus complexes et plus puissants</li>
+</ul></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="des-formats-et-des-outils-langages-et-éditeurs">Des formats et des outils: langages et éditeurs</h2>
+<div class="figure">
+<img src="Images/markdown_vs_plaintext.png" alt="Distinguer Markdown du plain text, et les éditeurs plein-texte des éditeurs Markdown" />
+<p class="caption">Distinguer Markdown du <em>plain text</em>, et les éditeurs plein-texte des éditeurs Markdown</p>
+</div>
+</div>
+<div id="que-tu-le-manges-avec-une-fourchette-ou-une-cuillère-limportant-ce-nest-pas-lustensile-cest-le-gâteau" class="slide section level1">
+<h1>“Que tu le manges avec une fourchette ou une cuillère, l’important, ce n’est pas l’ustensile, c’est le gâteau!”</h1>
+<p>- moi-même</p>
+<p>AH. Alors il y en a, des outils! Oui, mais le fichier Markdown <strong><em>n’en dépend pas</em></strong>; il est aussi lisible <em>à l’extérieur</em> de ces outils (logiciels), et à l’inverse, il peut être écrit hors du logiciel puis lu (<em>parsé</em>, interprété) à l’intérieur.</p>
+<p>Bénéfices de cette indépendance face aux outils: changement d’<em>OS</em> (Windows &lt;-&gt; Mac &lt;-&gt; Linux); partage d’un fichier ou co-écriture inter-OS; pérennité!</p>
+</div>
+<div id="la-syntaxe-markdown" class="slide section level1">
+<h1>La syntaxe Markdown</h1>
+<h2 id="quest-ce-que-markdown-permet">Qu’est-ce que Markdown permet?</h2>
+<p>Markdown permet un certain degré de mise en forme très facile à faire <em>on the fly</em>: gras, italique, titres et sous-titres, listes à puces.</p>
+</div>
+<div class="slide section level1">
+
+<h3 id="emphase">Emphase</h3>
+<p><em>Italique</em>: <code>*italique*</code> ou <code>_italique_</code> (1 underscore)<br />
+<strong>Gras</strong>: <code>**gras**</code> ou <code>__gras__</code> (2 underscores)<br />
+<strong><em>Gras et Italique</em></strong>: <code>***gras-italique***</code> ou <code>___gras-italique___</code> (3 underscores)</p>
+<h3 id="niveaux-de-titres-headings">Niveaux de titres (<em>Headings</em>)</h3>
+<p>Titre 1: <code># Titre 1</code><br />
+Titre 2: <code>## Titre 2</code><br />
+Titre 6: <code>###### Titre 6</code></p>
+<ul>
+<li>relève d’un balisage <strong>sémantique</strong>
+<ul>
+<li>on ne demande pas une <em>apparence</em> précise (taille 16, caractère gras!); plutôt, on indique de quel niveau de titre ça relève (autrement dit, le <em>sens</em> ou la <em>fonction</em> de ce contenu)</li>
+<li>semblable aux Titres dans Word/LibreOffice (mais beaucoup plus rapide/facile à taper!)</li>
+</ul></li>
+</ul>
+<h3 id="listes-à-puces">Listes à puces</h3>
+<ul>
+<li>listes numérotées:
+<ul>
+<li>utiliser des chiffres (<code>1.</code>, <code>2.</code>…)</li>
+<li>les chiffres indentés (en utilisant une tabulation, et recommençant la numérotation) deviendront des sous-points</li>
+</ul></li>
+<li>listes non-ordonnées:
+<ul>
+<li>en utilisant des symboles: tiret (<code>-</code>), astérisque (<code>*</code>) ou signe d’addition (<code>+</code>)</li>
+</ul></li>
+</ul>
+<h3 id="mise-en-page">Mise en page</h3>
+<ul>
+<li>Changement de paragraphe: laisser une ligne vide<br />
+</li>
+<li>Retour à la ligne (sans changer de paragraphe): terminer une ligne par un double espacement <em>forcera</em> le retour à la ligne</li>
+<li>Utiliser un caractère qui donnerait autrement du code: mettre un backslash (<code>\</code>) avant</li>
+<li><h6 id="quand-tu-corrige-ton-erreur-changes-didée-barré">Quand tu <del>corrige ton erreur</del> changes d’idée: <code>~~barré~~</code></h6></li>
+</ul>
+</div>
+</body>
+</html>
