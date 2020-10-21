@@ -34,6 +34,8 @@ Atelier présenté pour les <em>Chercheuses badass</em>
 <li><strong>Comment?</strong>: La <em>syntaxe</em> Markdown</li>
 <li><strong>Pourquoi?</strong>: Mon utilisation de MD</li>
 </ol>
+<p>Note: les diapositives ont été rédigées en Markdown et converties vers du HTML via Pandoc.</p>
+<p>La documentation de cet atelier est <a href="https://github.com/emidrouin/atelier-markdown">disponible en ligne</a></p>
 </div>
 <div id="quest-ce-que-markdown" class="slide section level1">
 <h1>Qu’est-ce que Markdown</h1>
@@ -101,7 +103,7 @@ Atelier présenté pour les <em>Chercheuses badass</em>
 </div>
 <div id="pis-word-ça-va-tellement-bien-word" class="slide section level1">
 <h1>Pis Word?????????? Ça va tellement bien Word!!</h1>
-<p>Liberté et indépendance</p>
+<p>Deux mots - liberté - indépendance</p>
 </div>
 <div class="slide section level1">
 
@@ -140,7 +142,7 @@ Atelier présenté pour les <em>Chercheuses badass</em>
 <li>les outils
 <ul>
 <li>la dépendance aux outils</li>
-<li>l’interopérabilité (compatibilité/portabilité)</li>
+<li>l’interopérabilité (compatibilité, portabilité)</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -160,6 +162,17 @@ Atelier présenté pour les <em>Chercheuses badass</em>
 <img src="Images/croustade.png" alt="Comparaison entre la syntaxe Markdown et le document produit" />
 <p class="caption">Comparaison entre la syntaxe Markdown et le document produit</p>
 </div>
+</div>
+<div class="slide section level1">
+
+<h2 id="wysiwym-vs-wysiwyg">WYSIWYM vs WYSIWYG</h2>
+<ul>
+<li><strong>What You See Is What You Get</strong> (“tel écran, tel écrit”)
+<ul>
+<li>rendu graphique (<em>visual</em>) orienté vers un support prévu (feuille, page web)</li>
+</ul></li>
+<li><strong>What You See Is What You Mean</strong></li>
+</ul>
 </div>
 <div class="slide section level1">
 
@@ -206,16 +219,17 @@ Atelier présenté pour les <em>Chercheuses badass</em>
 <p class="caption">Distinguer Markdown du <em>plain text</em>, et les éditeurs plein-texte des éditeurs Markdown</p>
 </div>
 </div>
-<div id="que-tu-le-manges-avec-une-fourchette-ou-une-cuillère-limportant-ce-nest-pas-lustensile-cest-le-gâteau" class="slide section level1">
-<h1>“Que tu le manges avec une fourchette ou une cuillère, l’important, ce n’est pas l’ustensile, c’est le gâteau!”</h1>
-<p>- moi-même</p>
+<div class="slide section level1">
+
 <p>AH. Alors il y en a, des outils! Oui, mais le fichier Markdown <strong><em>n’en dépend pas</em></strong>; il est aussi lisible <em>à l’extérieur</em> de ces outils (logiciels), et à l’inverse, il peut être écrit hors du logiciel puis lu (<em>parsé</em>, interprété) à l’intérieur.</p>
-<p>Bénéfices de cette indépendance face aux outils: changement d’<em>OS</em> (Windows &lt;-&gt; Mac &lt;-&gt; Linux); partage d’un fichier ou co-écriture inter-OS; pérennité!</p>
+<p><code>"Que tu le manges avec une fourchette ou une cuillère, l'important, ce n'est pas l'ustensile, c'est le gâteau!"</code> - moi-même</p>
+<p>Avantages de cette indépendance face aux outils: - pérennité - changement de système d’exploitation (Windows &lt;-&gt; Mac &lt;-&gt; Linux) - changement de logiciel - changement de version (mise à jour) - stabilité - transfert inter-logiciel d’un fichier - co-écriture inter-logicielle ou inter-OS - <strong>export</strong>abilité, <strong>import</strong>abilité ou <strong>trans</strong>portabilité?</p>
 </div>
 <div id="la-syntaxe-markdown" class="slide section level1">
 <h1>La syntaxe Markdown</h1>
 <h2 id="quest-ce-que-markdown-permet">Qu’est-ce que Markdown permet?</h2>
 <p>Markdown permet un certain degré de mise en forme très facile à faire <em>on the fly</em>: gras, italique, titres et sous-titres, listes à puces.</p>
+<p>C’est ce qui en fait une syntaxe aussi appropriée pour la <strong>prise de notes</strong>. Plus simple/facile que Word/LibreOffice, mais plus complet (niveau mise en forme) que du simple texte (.txt). Si l’on ajoute ses qualités de pérennité et de stabilité, ça en fait la syntaxe parfaite pour la <strong>conservation</strong> de ces mêmes <strong>notes</strong>.</p>
 </div>
 <div class="slide section level1">
 
@@ -234,6 +248,9 @@ Titre 6: <code>###### Titre 6</code></p>
 <li>semblable aux Titres dans Word/LibreOffice (mais beaucoup plus rapide/facile à taper!)</li>
 </ul></li>
 </ul>
+</div>
+<div class="slide section level1">
+
 <h3 id="listes-à-puces">Listes à puces</h3>
 <ul>
 <li>listes numérotées:
@@ -252,8 +269,164 @@ Titre 6: <code>###### Titre 6</code></p>
 </li>
 <li>Retour à la ligne (sans changer de paragraphe): terminer une ligne par un double espacement <em>forcera</em> le retour à la ligne</li>
 <li>Utiliser un caractère qui donnerait autrement du code: mettre un backslash (<code>\</code>) avant</li>
-<li><h6 id="quand-tu-corrige-ton-erreur-changes-didée-barré">Quand tu <del>corrige ton erreur</del> changes d’idée: <code>~~barré~~</code></h6></li>
+<li><h6 id="quand-tu-corriges-ton-erreur-changes-didée-barré">Quand tu <del>corriges ton erreur</del> changes d’idée: <code>~~barré~~</code></h6></li>
 </ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="ressources-à-propos-de-la-syntaxe-markdown">Ressources à propos de la syntaxe Markdown</h2>
+<ul>
+<li>Pour un essai rapide: <a href="https://www.markdowntutorial.com/">Markdown tutorial</a></li>
+<li>Syntaxe de base: <a href="https://www.markdownguide.org/basic-syntax/">Markdown guide</a></li>
+<li>Aide-mémoire (en ligne ou à télécharger): <a href="https://www.markdownguide.org/cheat-sheet/">Cheatsheet de Markdown guide</a></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="mon-utilisation">Mon utilisation</h2>
+<p>Préambule: - discipline: littérature - lectures: principalement papier, parfois à l’écran (PDF scannés, surtout) - plateformes utilisées pour prendre des notes et rédiger: ordinateur portable sur Linux; tablette Android (+ clavier Bluetooth)</p>
+<p>Utilisation au fil du temps: - prise de notes (cours, conférences) - prise de notes de lecture (préparation à l’examen de synthèse) - rédaction (premier jet)</p>
+</div>
+<div class="slide section level1">
+
+<h2 id="éditeurs-markdown">Éditeurs Markdown</h2>
+<ul>
+<li>Typora</li>
+<li>Zettlr</li>
+<li>…</li>
+<li>mais il y en a des quantités d’autres, certains plus légers (<em>lightweight</em>), d’autres seulement pour une plateforme (Mac ou Windows), certains en ligne (<em>in-browser</em>), certains qui sont libres et d’autres non!</li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="typora">Typora</h2>
+<ul>
+<li>probablement le plus répandu à l’heure actuelle</li>
+<li>malheureusement pas libre ni ouvert</li>
+<li>malgré tout un excellent éditeur Markdown</li>
+<li>disponible ici: <a href="https://typora.io/">Typora.io</a></li>
+</ul>
+<div class="figure">
+<img src="Images/typora.png" alt="Interface Typora" />
+<p class="caption">Interface Typora</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h2 id="zettlr">Zettlr</h2>
+<ul>
+<li>éditeur Markdown orienté pour l’<strong>écriture académique</strong> (!!!)</li>
+<li>intégration avec Zotero (!!!!!)</li>
+<li>libre et ouvert (!!!!!!!)</li>
+<li>disponible ici: <a href="https://zettlr.com/">Zettlr.com</a></li>
+</ul>
+<div class="figure">
+<img src="Images/zettlr.png" alt="Interface Zettlr" />
+<p class="caption">Interface Zettlr</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h3 id="zettlr-comme-outil-de-prise-de-notes">Zettlr comme outil de prise de notes</h3>
+<ul>
+<li>arborescence (liste des dossiers et des fichiers; niveaux de titres dans le fichier)</li>
+<li>onglets multiples, moteur de recherche</li>
+</ul>
+<div class="figure">
+<img src="Images/zettlr_notes.png" alt="Interface Zettlr" />
+<p class="caption">Interface Zettlr</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h3 id="zettlr-comme-outil-de-rédaction">Zettlr comme outil de rédaction</h3>
+<ul>
+<li>mode sans distraction (fermer le menu des dossiers)</li>
+<li>mode de lisibilité (algorithme de mise en évidence syntaxique selon la complexité de la phrase)</li>
+</ul>
+<div class="figure">
+<img src="Images/zettlr_redaction.png" alt="Interface Zettlr" />
+<p class="caption">Interface Zettlr</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h3 id="intégration-zotero">Intégration Zotero</h3>
+<h4 id="bibliothèque-de-références">Bibliothèque de références</h4>
+<ul>
+<li>exporter la bibliothèque à partir de Zotero
+<ul>
+<li>Clic droit sur “Ma bibliothèque” - Exporter la bibliothèque - format: Better BibTex; cocher “Garder à jour”</li>
+<li>résultat: un fichier .bib à l’endroit que vous voulez</li>
+</ul></li>
+<li>pointer vers ce fichier (qui se mettra à jour automatiquement) dans Zettlr
+<ul>
+<li>Fichier - Paramètres - Exporter - “Fichier de références bibliographiques”</li>
+</ul></li>
+</ul>
+<h4 id="format-des-références">Format des références</h4>
+<ul>
+<li>choisir et télécharger la feuille de styles de votre choix <a href="https://www.zotero.org/styles">à partir du Zotero Style Repository</a></li>
+<li>pointer vers la feuille de styles que vous avez téléchargée dans Zettlr
+<ul>
+<li>juste en-dessous de l’endroit où vous pointez vers votre fichier .bib</li>
+</ul></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h4 id="pour-citer">Pour citer</h4>
+<ul>
+<li>à partir de Zettlr: Simplement utiliser @, et sélectionner le texte dans le menu défilant</li>
+<li>ce qui apparaîtra enversion plein-texte:
+<ul>
+<li>référence à l’ouvrage entier: <code>@handle</code></li>
+<li>référence spécifique: <code>[@handle, 99]</code></li>
+</ul></li>
+<li>la clé de citation (<em>handle</em>) est automatiquement produite par Zotero, mais vous pouvez la modifier, ou même établir une nouvelle syntaxe avec le plugin Better BibTex pour Zotero, pour qu’elle se fasse à votre goût (Édition - Préférences - Better BibTex - Format de clé); mon format de clé: <code>[auth.etal][origyear]|[auth.etal][year]</code></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<div class="figure">
+<img src="Images/param_zettlr.png" alt="Paramètres pour lier Zotero à Zettlr" />
+<p class="caption">Paramètres pour lier Zotero à Zettlr</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h3 id="prise-de-notes-pour-lexamen-de-synthèse">Prise de notes pour l’examen de synthèse</h3>
+<ul>
+<li>un fichier par ouvrage qui était sur ma liste
+<ul>
+<li>nom du fichier: AUTEURICE_2134.md</li>
+<li>Titre 1 (<code># Titre</code>): AUTEURICE (2134). Titre de l’ouvrage</li>
+<li>recopier les extraits/citations d’intérêt (réf: numéro de page entre parenthèses)</li>
+<li>indiquer ma propre réflexion lors de la lecture (réf: mes initiales entre parenthèses), de même que les liens que je voyais avec d’autres ouvrages ou théories</li>
+</ul></li>
+</ul>
+<p>(À l’époque de la préparation de mon examen, Typora n’était pas aussi développé/puissant qu’aujourd’hui et Zettlr n’existait pas; d’où mon choix de Zim-wiki, qui s’écrit dans un hybride de Markdown. Le principe reste importable dans Zettlr, Typora ou autre.)</p>
+</div>
+<div class="slide section level1">
+
+<div class="figure">
+<img src="Images/zim-wiki_notes.png" alt="Notes de lecture dans Zim-wiki" />
+<p class="caption">Notes de lecture dans Zim-wiki</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h3 id="et-sur-la-tablette">Et sur la tablette?</h3>
+<div class="figure">
+<img src="Images/android_notes.png" alt="Prise de notes sur une tablette" />
+<p class="caption">Prise de notes sur une tablette</p>
+</div>
+</div>
+<div class="slide section level1">
+
+<h2 id="merci">Merci!</h2>
+<p>Documentation de l’atelier de ce soir: <a href="https://github.com/emidrouin/atelier-markdown">mon Github</a></p>
+<p>Mes projets: <a href="https://emidrouin.ca/">page web perso (dont le contenu est écrit en Markdown!)</a></p>
 </div>
 </body>
 </html>
