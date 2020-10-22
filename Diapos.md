@@ -91,7 +91,7 @@ LaTeX est beaucoup utilisé pour la rédaction (articles, livres, thèses) orien
 
 # Pis Word?????????? Ça va tellement bien Word!!
 
-Deux mots
+Deux mots:  
 - liberté
 - indépendance
 
@@ -178,7 +178,7 @@ AH. Alors il y en a, des outils! Oui, mais le fichier Markdown ***n'en dépend p
 
 ``"Que tu le manges avec une fourchette ou une cuillère, l'important, ce n'est pas l'ustensile, c'est le gâteau!"`` -\ moi-même
 
-Avantages de cette indépendance face aux outils:
+Avantages de cette indépendance face aux outils:  
 - pérennité
 	- changement de système d'exploitation (Windows <-> Mac <-> Linux)
 	- changement de logiciel
@@ -241,12 +241,12 @@ Titre 6: ``###### Titre 6``
 
 ## Mon utilisation
 
-Préambule:
+Préambule:  
 - discipline: littérature
 - lectures: principalement papier, parfois à l'écran (PDF scannés, surtout)
 - plateformes utilisées pour prendre des notes et rédiger: ordinateur portable sur Linux; tablette Android (+ clavier Bluetooth)
 
-Utilisation au fil du temps:
+Utilisation au fil du temps:  
 - prise de notes (cours, conférences)
 - prise de notes de lecture (préparation à l'examen de synthèse)
 - rédaction (premier jet)
