@@ -174,11 +174,16 @@ Markdown est une **syntaxe** qui ne dépend pas d'un logiciel, ni pour l'écritu
 
 ---
 
+### Vraiment pas d'outils?
+
 AH. Alors il y en a, des outils! Oui, mais le fichier Markdown ***n'en dépend pas***; il est aussi lisible *à l'extérieur* de ces outils (logiciels), et à l'inverse, il peut être écrit hors du logiciel puis lu (*parsé*, interprété) à l'intérieur.
 
 ``"Que tu le manges avec une fourchette ou une cuillère, l'important, ce n'est pas l'ustensile, c'est le gâteau!"`` -\ moi-même
 
+### Plutôt une indépendance face aux outils
+
 Avantages de cette indépendance face aux outils:  
+
 - pérennité
 	- changement de système d'exploitation (Windows <-> Mac <-> Linux)
 	- changement de logiciel
