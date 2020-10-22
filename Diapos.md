@@ -180,9 +180,7 @@ AH. Alors il y en a, des outils! Oui, mais le fichier Markdown ***n'en dépend p
 
 ``"Que tu le manges avec une fourchette ou une cuillère, l'important, ce n'est pas l'ustensile, c'est le gâteau!"`` -\ moi-même
 
-### Plutôt une indépendance face aux outils
-
-Avantages de cette indépendance face aux outils:  
+### Avantages de cette indépendance face aux outils
 
 - pérennité
 	- changement de système d'exploitation (Windows <-> Mac <-> Linux)
